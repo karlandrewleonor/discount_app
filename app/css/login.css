@@ -1,0 +1,51 @@
+
+/*LOGIN*/
+
+.login {
+	display: flex;	
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.login .login-form{
+	width: 475px;
+	margin: auto;
+	background: #fffffffa;
+}
+
+.login .login-form .login-logo img{
+	width: 145px;
+}
+
+.login .login-form .login-fields a{
+	font-size: 14px;
+}
+
+.login .login-form .copyright{
+	text-align: center;
+}
+
+.login .login-form .copyright label{
+	font-size: 12px;
+}
+
+.content-center{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 400px) { 
+	.login .login-form{
+		width: 100%;
+		padding: 10px;
+	}
+
+	.login .login-form .login-logo img{
+		width: 100%;
+	}
+}

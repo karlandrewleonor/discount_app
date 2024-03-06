@@ -1,2 +1,4 @@
-# discount_app
- 
+# Basic Sample Hardhat Project
+
+
+```

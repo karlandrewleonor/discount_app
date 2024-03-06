@@ -1,0 +1,10 @@
+{
+  "name": "DISCOUNT APP",
+  "description": "DISCOUNT APP",
+  "repository": "",
+  "logo": "",
+  "keywords": [],
+  "addons" : [
+  	"mongolab"
+  ]
+}

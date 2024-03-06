@@ -1,0 +1,76 @@
+
+.dashboard {
+    padding: 0;
+    position: relative;    
+    padding-bottom: 40px;
+    
+}
+
+.d-widget-box {
+    background-color: #fff;
+	padding: 15px;
+	padding-top: 20px;
+	padding-bottom: 25px;
+	min-width: 180px;
+	height: 110px;  
+    border-radius: 6px;
+    margin-bottom: 14px;
+}
+
+.d-widget-box img {	
+	height: 45px;
+	margin-right: 10px;
+	margin-top: 4px;
+}
+
+.ea-widget-sub-box label{
+	font-size: 13px;
+    color: #7e9ea8;    
+	padding: 0;
+    margin:0;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.ea-widget-sub-box label.code_label{
+	font-size: 12px;
+    color: #7e9ea8;    
+	padding: 0;
+    margin:0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.ea-widget-sub-box label.code_amount{
+	font-size: 14px;
+    color: #000000;    
+	padding: 0;
+    margin:0;
+    margin-top: 9px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    text-transform: uppercase;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.ea-widget-sub-box p{
+	font-size: 20px;
+	padding: 0;
+	margin:0;
+	font-weight: 800;
+	line-height: 26px;
+    color: #353535;
+    word-break: break-word;
+}

@@ -1,0 +1,254 @@
+#main-body #sidebar{
+    background: #690903;
+    width: 75px;
+    overflow: hidden;
+    min-height: 100vh;
+    height: 100%;
+    transition: all 0.3s;
+}
+
+#main-body.has-sidebar #sidebar {
+    width: 300px;
+}
+
+#main-body #sidebar .sidebar-header {
+    border-bottom: 1px solid #ffffff2e;
+    text-align: center;
+    padding: 10px;
+}
+
+#main-body.has-sidebar #sidebar .sidebar-header {
+    padding: 20px;
+}
+
+#main-body #sidebar .sidebar-header img {
+    max-width: 150px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#main-body.has-sidebar #sidebar .sidebar-header img {
+    margin-bottom: 23px;
+}
+
+#main-body #sidebar .sidebar-header p {
+    margin: 0;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#main-body #sidebar .sidebar-header p:nth-child(2) {
+    display: none;
+}
+
+#main-body.has-sidebar #sidebar .sidebar-header p:nth-child(2){
+    display: block;
+}
+
+#main-body.has-sidebar #sidebar .sidebar-header p:nth-child(3){
+    display: none;
+}
+
+#main-body #sidebar .navigations{
+    height: calc(100vh - 105px);
+    overflow: auto;
+    overflow-x: hidden;
+    padding: 15px;
+    transition: height 0.3s;
+}
+
+#main-body.has-sidebar #sidebar .navigations{
+    height: calc(100vh - 255px);
+}
+
+#main-body #sbNav{
+    padding: 15px;
+    margin-left: 75px;
+    transition: all 0.3s;
+}
+
+#main-body #sbNav.has-bg{
+    background-color: #fff;
+    box-shadow: 0px 3px 10px #5f79a24f;
+}
+
+#main-body #sbNav .navbar-brand label{
+    font-weight: 600;
+}
+
+#main-body #sbNav .nav-link {
+    color: #545555;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#main-body #sbNav .dropdown{
+    position: relative;
+}
+
+#main-body #sbNav .dropdown .dropdown-menu{
+    position: absolute;
+    right: 0;
+    left: unset;
+}
+
+#main-body.has-sidebar #sbNav{
+    margin-left: 300px;
+}
+
+#main-body.has-sidebar #maincontent{
+    margin-left: 300px;
+}
+
+#main-body #sbNav .toggle-btn {
+    padding: 10px;
+    color: #595959;
+}
+
+#main-body #sidebar .navigations ul li .btn {
+    text-align: left;
+    padding: 12px 14px;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #ffffff73;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#main-body.has-sidebar #sidebar .navigations ul li .btn {
+    padding: 15px 20px;
+}
+
+#main-body #sidebar .navigations ul li.active .btn {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#main-body #sidebar .navigations ul li .btn i {
+    width: 25px;
+    font-size: 15px;
+}
+
+#main-body #sidebar .navigations ul li .btn span{
+    display: none;
+}
+
+#main-body.has-sidebar #sidebar .navigations ul li .btn span{
+    display: inline;
+}
+
+#main-body #sidebar .navigations ul li.dd{
+    border-radius: 10px;
+    transition: all 0.3s;
+    padding-bottom: 15px;
+}
+
+#main-body #sidebar .navigations ul li.dd.show{
+    background: #ffffff14;
+}
+
+#main-body.has-sidebar #sidebar .navigations ul li.dd .collapse,
+#main-body.has-sidebar #sidebar .navigations ul li.dd .collapsing{
+    margin: 0px 15px;
+}
+
+#main-body #sidebar .navigations ul li.dd ul{
+    margin-left: 12px;
+}
+
+#main-body #sidebar .navigations ul li.dd ul li{
+    border: 0;
+    border-radius: 0;
+    border-left: 2px solid #ffffff18;
+}
+
+#main-body #sidebar .navigations ul li.dd ul li.active{
+    background: transparent;
+    border-width: 5px;
+    border-color: #bb2e3a;
+}
+
+#main-body #sidebar .navigations ul li.dd ul li .btn{
+    padding: 12px 14px;
+}
+
+@media only screen and (max-width: 767px) {
+    #main-body #sidebar {
+        width: 0px;
+    }
+    #main-body.has-sidebar #sidebar {
+        width: 75px;
+    }
+
+    #main-body #sidebar .sidebar-header p:nth-child(2) {
+        display: none!important;
+    }
+
+    #main-body #sidebar .sidebar-header p:nth-child(3) {
+        display: block!important;
+    }
+
+    #main-body.has-sidebar #sidebar .sidebar-header{
+        padding: 10px;
+    }
+    #main-body #sidebar .navigations{
+        height: calc(100vh - 105px)!important;
+    }
+
+    #main-body #sidebar .sidebar-header img{
+        width: 52px;
+        margin-bottom: 10px!important;
+    }
+
+    #main-body #sidebar .navigations ul li .btn span {
+        display: none!important;
+    }
+
+    #main-body #sidebar .navigations ul li .btn{
+        padding: 12px 14px!important;
+    }
+    #main-body.has-sidebar #sidebar .navigations ul li.dd .collapse,
+    #main-body.has-sidebar #sidebar .navigations ul li.dd .collapsing{
+        margin: 0;
+    }
+
+    #main-body #sbNav{
+        margin-left: 0;
+    }
+
+    #main-body.has-sidebar #sbNav{
+        margin-left: 75px;
+    }
+
+    #main-body #maincontent{
+        margin-left: 0;
+    }
+
+    #main-body.has-sidebar #maincontent{
+        margin-left: 75px;
+    }
+    #main-body #sidebar .navigations ul li.dd ul{
+        margin-left: 0;
+    }
+
+    #main-body #sidebar .navigations ul li.dd ul li{
+        border: none;
+    }
+
+    #main-body #sidebar .navigations ul li.dd ul li .btn{
+        padding: 12px!important;
+    }
+
+    #main-body #sidebar .navigations ul li.dd ul li.active .btn{
+        color: #df3947;
+    }
+
+    #main-body #sidebar .navigations ul li.dd ul li .btn span{
+        display: block!important;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
